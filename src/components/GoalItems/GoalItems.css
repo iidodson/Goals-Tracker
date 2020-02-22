@@ -1,0 +1,7 @@
+.goalitem {
+    border: 1px solid rgb(181, 181, 181);
+    border-radius: 10px;
+    padding: 1em;
+    margin-top: 2em;
+    background-color: rgb(247, 242, 119);
+}
