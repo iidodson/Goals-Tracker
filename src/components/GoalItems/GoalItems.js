@@ -4,9 +4,14 @@ import "./GoalItems.css"
 function GoalItems(props) {
 
     return(
-        <div>
+        <div className="goals">
             {props.goal.map(function (goal){
-                return <p key ={goal.id} className="goalitem">{goal.text}</p>
+                return ( 
+                    <div key ={goal.id} className="notes-item">
+                        <span className="dot"></span>
+                        <p  className="goalitem">{goal.text}</p>
+                    </div>
+                );
             })}
         </div>
     );

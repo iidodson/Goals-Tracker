@@ -24,10 +24,10 @@ function Form(props) {
     return(
         <form onSubmit={onGoalCreation}>
             <label className="label">
-            Enter a course goal:
+            Notes:
             </label>
-            <input type="text" value={enteredText} onChange={onTextChangeHandler} />
-            <button>Submit</button>
+            <input type="text" required={true} value={enteredText} onChange={onTextChangeHandler} />
+            <button className="button">Submit</button>
         </form>
     );
 }

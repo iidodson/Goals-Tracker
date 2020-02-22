@@ -5,18 +5,7 @@ import './App.css';
 
 
 function App() {
-  const [courseGoals, setCourseGoals] = useState(
-    [
-      {
-        id: 1,
-        text: "My first goal"
-      },
-      {
-        id: 2,
-        text: "My second goal"
-      }
-    ]
-  )
+  const [courseGoals, setCourseGoals] = useState([])
   
   function addNewGoalHandler(newGoal){
     setCourseGoals(function(prevGoal){
@@ -26,7 +15,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Course Goals</h1>
+      <h1>Notes App</h1>
       <Form onAddGoal = {addNewGoalHandler}/>
       <GoalItems goal={courseGoals}/>
     </div>
